@@ -1,4 +1,53 @@
-Redirecting...
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background-color: #f8f9fa; 
+            color: #333;
+        }
+        .card { 
+            text-align: center; 
+            padding: 40px 30px; 
+            background: white; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+            max-width: 400px;
+        }
+        .btn { 
+            display: inline-block; 
+            margin-top: 20px; 
+            padding: 12px 24px; 
+            background-color: #007bff; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: bold; 
+            transition: background-color 0.2s;
+        }
+        .btn:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Opening your email...</h2>
+        <p>If your browser blocked the automatic redirect, click the button below to continue.</p>
+        <a href="mailto:muskydemon@gmail.com" class="btn">Send Email</a>
+    </div>
 
-
-    Opening your Email client... If it doesn't open automatically, click here.
+    <script>
+        // Attempt to trigger the email client automatically via JavaScript
+        setTimeout(function() {
+            window.location.href = "mailto:muskydemon@gmail.com";
+        }, 800);
+    </script>
+</body>
+</html>
